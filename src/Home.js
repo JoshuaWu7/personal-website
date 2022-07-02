@@ -1,14 +1,21 @@
 import "./Home.css";
 import { Outlet, Link } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import {
+  Box,
+  Button,
+  Typography,
+  Paper,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+} from "@mui/material";
 
 function Home() {
   return (
-    <div className="Home">
-      <Header />
-      <Footer />
-    </div>
+    <>
+    <Typography>Home</Typography>
+  </>
   );
 }
 
