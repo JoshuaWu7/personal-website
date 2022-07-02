@@ -21,7 +21,7 @@ export default function Header() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" elevation={2}>
           <Toolbar>
-            <Link href="/personal-website/#" color="inherit" underline="none">
+            <Link href="/" color="inherit" underline="none">
               <Typography variant="h4" component="div">
                 Portfolio
               </Typography>
@@ -36,7 +36,7 @@ export default function Header() {
                   <Link
                     underline="none"
                     color="inherit"
-                    href={"/personal-website/#/" + page.toLowerCase()}
+                    href={"/" + page.toLowerCase()}
                   >
                     <Typography
                       variant="h6"

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Contact() {
+export default function Projects() {
   return (
-    <main style={{ padding: "1rem 0" }}>
-      <h2>Projects, coming soon...</h2>
-    </main>
+    
+      <h3>Projects, coming soon...</h3>
+    
   );
 }

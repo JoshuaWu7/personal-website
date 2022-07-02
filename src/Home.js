@@ -1,4 +1,3 @@
-import "./Home.css";
 import { Outlet, Link } from "react-router-dom";
 import {
   Box,
@@ -14,7 +13,7 @@ import {
 function Home() {
   return (
     <>
-    <Typography>Home</Typography>
+    <Typography variant='h3'>Home</Typography>
   </>
   );
 }
