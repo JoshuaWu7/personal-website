@@ -1,25 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import Home from "./Home";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Projects, Blog } from "./components/route";
-import { CSSBaseline, ThemeProvider } from "@mui/material/";
+import { Projects, Blog, Home } from "./pages/route";
+import { CssBaseline, ThemeProvider, Box } from "@mui/material/";
 import customTheme from "./assets/theme";
-import Header from "./assets/Header";
-import Footer from "./assets/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <Header />
-    <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/blog" element={<Blog />} />
-    </Routes>
-    <Footer />
+    <ThemeProvider theme={customTheme}>
+      <CssBaseline />
+      <Header />
+      <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
+      </Routes>
+      <Footer />
+    </ThemeProvider>
   </Router>,
   document.getElementById("root")
 );

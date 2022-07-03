@@ -1,3 +1,4 @@
+import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import {
   Box,
@@ -10,12 +11,10 @@ import {
   CardActions,
 } from "@mui/material";
 
-function Home() {
+export default function Home() {
   return (
     <>
     <Typography variant='h3'>Home</Typography>
   </>
   );
 }
-
-export default Home;
